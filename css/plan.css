@@ -1,0 +1,30 @@
+
+/* ------------- Plan page css --------------- */
+.plan {
+    padding: 10px;
+}
+
+.plan .col-md-6 {
+    padding: 10px!important;
+}
+
+.card .selected {
+    border: 1px solid darkgray;
+}
+
+.people-number {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.people-number p {
+    margin: 0px;
+}
+
+@media screen and (min-width: 992px) {
+    .plan-refer {
+        border-right: 1px grey dashed;
+    }
+}
