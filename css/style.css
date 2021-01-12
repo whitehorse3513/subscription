@@ -19,8 +19,8 @@ a:hover {
 }
 
 a.active {
-  color: darkgray;
-  border-bottom: grey 3px solid;
+  color: orange;
+  border-bottom: orange 3px solid;
 }
 
 .logo {
