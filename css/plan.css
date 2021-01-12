@@ -12,12 +12,29 @@
     border: 1px solid darkgray;
 }
 
-.people-number {
+.card {
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.people-number, .drink-number {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+.detail-show {
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+.detail-show 
 
 .people-number p {
     margin: 0px;
