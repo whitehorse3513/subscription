@@ -65,6 +65,14 @@ a.active {
   align-items: center;
 }
 
+.modal-header {
+  background-image: url("../assets/img/blender.jpg");
+  background-position-y: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
 @media screen and (max-width: 767px) {
   .mob-view {
     display: flex;
@@ -79,3 +87,4 @@ a.active {
     display: none;
   }
 }
+

@@ -67,35 +67,62 @@
 				</nav>
 			</div>
 		</div>
-		<div class="row content">
-			<div class="col-lg-8 col-md-6 col-sm-12" style="height: 500px; z-index: 1;">
-				<video style="width: 100%; height: 100%;" autoplay loop controls>
-					<source src="assets/video/cocoa.mov" type="video/mp4">
-					<source src="movie.ogg" type="video/ogg">
-				</video>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 details">
-				<div class="header">
-					<h5>SUSTAINABLE</h5>
+		<div class="content">
+			<div class="row">
+				<div class="col-lg-8 col-md-6 col-sm-12" style="height: 500px; z-index: 1;">
+					<video style="width: 100%; height: 100%;" autoplay loop controls>
+						<source src="assets/video/cocoa.mov" type="video/mp4">
+						<source src="movie.ogg" type="video/ogg">
+					</video>
 				</div>
-				<div class="sub-title">
-					<h1 style="font-family: 'Times New Roman', serif;">
-						DIRECTLY FROM SMALL FARMERS TO YOUR KITCHEN
-					</h1>
-				</div>
-				<div class="body">
-					<p>
-						Exotic fruits, Fantastic juices, Healthy smoothies, and Breakfast bowls delivered to you.
-					</p>
-					<p>That easy!</p>
-				</div>
-				<div class="button">
-					<button class="btn btn-dark text-white" type="button">VIEW OUR PLANS &nbsp;<i class="fas fa-arrow-right"></i></button>
+				<div class="col-lg-4 col-md-6 col-sm-12 details">
+					<div class="header">
+						<h5>SUSTAINABLE</h5>
+					</div>
+					<div class="sub-title">
+						<h1 style="font-family: 'Times New Roman', serif;">
+							DIRECTLY FROM SMALL FARMERS TO YOUR KITCHEN
+						</h1>
+					</div>
+					<div class="body">
+						<p>
+							Exotic fruits, Fantastic juices, Healthy smoothies, and Breakfast bowls delivered to you.
+						</p>
+						<p>That easy!</p>
+					</div>
+					<div class="button">
+						<a class="btn btn-dark text-white" href="plan.html">VIEW OUR PLANS &nbsp;<i class="fas fa-arrow-right"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+	<button id="myBtn">Open Modal</button>
+	<div class="modal hide fade" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<!-- Modal body -->
+				<div class="modal-body text-center">
+					<h4 style="font-family: Georgia, 'Times New Roman', Times, serif;">
+						Fantastic Portable Juice blender
+					</h4>
+					<h4 style="font-family: Georgia, 'Times New Roman', Times, serif;">
+						*FREE*' on your first order
+					</h4>
+					<p>*' wehn you choose 3, 6, or 12-month plan, <span>&#163;</span>RRP:29,99</p>
+					<button type="button" class="btn btn-warning" data-dismiss="modal">GET IT NOW!</button>
+				</div>
+			</div>
+		  </div>
+	</div>
 </body>
-<script type="text/javascript" src=""></script>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        $('#myModal').modal('show');
+    });
+</script>
 </html>
