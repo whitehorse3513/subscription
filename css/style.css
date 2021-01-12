@@ -13,12 +13,7 @@ a {
   font-size: larger;
 }
 
-a:hover {
-  color: darkgray;
-  border-bottom: grey 3px solid;
-}
-
-a.active {
+a.active, a:hover {
   color: darkorange;
   border-bottom: darkorange 3px solid;
 }
