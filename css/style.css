@@ -5,7 +5,7 @@ body {
 .navbar {
   background-color: transparent!important;
   justify-content: space-between;
-  margin-left: 120px;
+  margin-left: 40px;
 }
 
 a {
@@ -23,10 +23,30 @@ a.active {
   border-bottom: grey 3px solid;
 }
 
-.logo-img {
+.logo {
   display: flex;
   margin: auto;
   padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  padding-top: 70px;
+  padding-right: 10px;
+}
+
+.mob-logo {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mob-logo h3 {
+  padding-top: 20px;
+  padding-right: 5px;
 }
 
 .nav-item {
@@ -71,6 +91,13 @@ a.active {
   background-size: cover;
   background-repeat: no-repeat;
   height: 250px;
+}
+.btn-forest-green {
+  background-color: 	#228B22;
+}
+.forest-green {
+  color: #228B22;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width: 767px) {
