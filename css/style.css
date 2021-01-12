@@ -87,6 +87,26 @@ a.active, a:hover {
   background-repeat: no-repeat;
   height: 250px;
 }
+.latest-row {
+  background-image: url("../assets/img/blender_white.jpg");
+  background-position-y: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+
+.latest-row h5 {
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.latest-row a {
+  margin: 40px auto 0 auto;
+}
+
 .btn-forest-green {
   background-color: 	#228B22;
 }
