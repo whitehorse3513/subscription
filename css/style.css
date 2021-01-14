@@ -115,6 +115,10 @@ a {
   font-family: 'Times New Roman', Times, serif;
 }
 
+.video-player {
+  height: 500px; 
+  z-index: 1;
+}
 
 @media screen and (max-width: 767px) {
   .mob-view {
@@ -126,8 +130,17 @@ a {
     width: 100%;
   }
 
+  .video-player {
+    height: 300px; 
+  }
+  
+
   .web-view {
     display: none;
+  }
+
+  .latest-row {
+    height: 400px;
   }
 }
 
