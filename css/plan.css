@@ -14,6 +14,17 @@
 
 .card {
     height: 100%;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card.active {
+    opacity: 1;
+    border: orange 3px solid;
 }
 
 .card-body {
@@ -40,6 +51,14 @@
 
 button {
     width: 100px;
+}
+
+.btn-group button {
+    opacity: 0.5;
+}
+
+.btn.active{
+    opacity: 1;
 }
 
 @media screen and (min-width: 992px) {
