@@ -1,5 +1,5 @@
 
-/* ------------- Plan page css --------------- */
+/* ----------- Plan page css ----------- */
 .plan {
     padding: 10px;
 }
@@ -59,6 +59,20 @@ button {
 
 .btn.active{
     opacity: 1;
+}
+
+.stepper a:hover {
+    color: inherit;
+    background-color: inherit;
+    border: inherit;
+}
+
+.stepper a.active {
+    border: inherit;
+}
+
+.stepper a.active:hover {
+    color:  darkorange;
 }
 
 @media screen and (min-width: 992px) {

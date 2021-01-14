@@ -25,69 +25,76 @@ $(document).ready(function(){
             $(this).addClass('active');
             let value = $(this).data('value');
             $('.selected-drink').text(value);
+            changedState();
         }
     })
     let changedState = () => {
         let plan = $('.card.active').data('id');
         let people = $('.people-number button.active').data('value');
+        let drink = $('.drink-number button.active').data('value');
         
-        let serving = '';
+        let serving = 0;
         switch (plan) {
             case 1:
                 switch (people) {
                     case 1:
-                        serving = '1,90'
+                        serving = 1.90
                         break;
                     case 2:
-                        serving = '1,85'
+                        serving = 1.85
                         break;
                     case 3:
-                        serving = '1,75'
+                        serving = 1.75
                         break;
                 }
                 break;
             case 2:
                 switch (people) {
                     case 1:
-                        serving = '2,90'
+                        serving = 2.90
                         break;
                     case 2:
-                        serving = '2,85'
+                        serving = 2.85
                         break;
                     case 3:
-                        serving = '2,75'
+                        serving = 2.75
                         break;
                 }
                 break;
             case 3:
                 switch (people) {
                     case 1:
-                        serving = '3,90'
+                        serving = 3.90
                         break;
                     case 2:
-                        serving = '3,85'
+                        serving = 3.85
                         break;
                     case 3:
-                        serving = '3,75'
+                        serving = 3.75
                         break;
                 }
                 break;
             case 4:
                 switch (people) {
                     case 1:
-                        serving = '4,29'
+                        serving = 4.29
                         break;
                     case 2:
-                        serving = '4,19'
+                        serving = 4.19
                         break;
                     case 3:
-                        serving = '4,00'
+                        serving = 4.00
                         break;
                 }
                 break;
         }
 
-        $(".serving-price").text(serving);
+        if (drink == 7) {
+            serving = serving * 0.95;
+        }
+        
+
+        $(".serving-price").text(serving.toFixed(2));
     }
 
     changedState();
