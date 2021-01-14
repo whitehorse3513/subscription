@@ -25,7 +25,6 @@ $(document).ready(function(){
             $(this).addClass('active');
             let value = $(this).data('value');
             $('.selected-drink').text(value);
-            changedState();
         }
     })
     let changedState = () => {
